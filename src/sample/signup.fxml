@@ -1,0 +1,26 @@
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.PasswordField?>
+<DialogPane fx:controller="sample.SignupController"
+            xmlns:fx="http://javafx.com/fxml">
+    <headerText>
+        Enter Details to Sign Up
+    </headerText>
+    <content>
+        <GridPane hgap="10" vgap="10">
+            <Label text="First Name: " GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="firstName" promptText="Enter Your First Name" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+            <Label text="Last Name: " GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+            <TextField fx:id="lastName" promptText="Enter Your Last Name" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+            <Label text="Phone Number" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <TextField fx:id="phoneNumber" promptText="Enter Your Phone Number" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+            <Label text="User Name: " GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <TextField fx:id="userName" promptText="Enter Your User Name" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+            <Label text="Password: " GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <PasswordField fx:id="password" promptText="Enter Your Password" GridPane.rowIndex="4" GridPane.columnIndex="1"/>
+        </GridPane>
+    </content>
+</DialogPane>
